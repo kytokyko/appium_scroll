@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="33624" started-at="2019-12-13T08:16:37Z" finished-at="2019-12-13T08:17:10Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="33624" started-at="2019-12-13T08:16:37Z" finished-at="2019-12-13T08:17:10Z">
+      <class name="com.framework.testcases.TC_001">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="startReport" is-config="true" duration-ms="418" started-at="2019-12-13T08:16:36Z" finished-at="2019-12-13T08:16:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="setData" is-config="true" duration-ms="0" started-at="2019-12-13T08:16:37Z" finished-at="2019-12-13T08:16:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="setUpClass" is-config="true" duration-ms="151" started-at="2019-12-13T08:16:37Z" finished-at="2019-12-13T08:16:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="report()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="report" is-config="true" duration-ms="13" started-at="2019-12-13T08:16:37Z" finished-at="2019-12-13T08:16:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="beforeMethod" is-config="true" duration-ms="32392" started-at="2019-12-13T08:16:37Z" finished-at="2019-12-13T08:17:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="click()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="click" duration-ms="1032" started-at="2019-12-13T08:17:09Z" finished-at="2019-12-13T08:17:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2019-12-13T08:17:10Z" finished-at="2019-12-13T08:17:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="stopReport" is-config="true" duration-ms="406" started-at="2019-12-13T08:17:10Z" finished-at="2019-12-13T08:17:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReport -->
+      </class> <!-- com.framework.testcases.TC_001 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

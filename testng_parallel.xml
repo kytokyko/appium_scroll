@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="5" verbose="10">
+  <test name="TestOnChrome">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.framework.testcases.TESTCASE_1"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+ <!--   <test name="TestOnFirefox">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.framework.testcases.TC002_ticket_select"/>
+      <class name="com.framework.testcases.TC004_ticketAndMovieSelect"/>
+      <class name="com.framework.testcases.TC001_city_select_dropdown"/>
+      <class name="com.framework.testcases.TC003_movie_select"/>
+    </classes>
+  </test> Test -->
+</suite> <!-- Suite -->
