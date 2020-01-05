@@ -4,6 +4,8 @@
   <test thread-count="10" name="Test">
     <classes>
       <class name="com.framework.testcases.TC_001"/>
+      <class name="com.framework.testcases.TC_002"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

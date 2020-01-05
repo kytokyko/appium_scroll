@@ -13,10 +13,19 @@ public class SampleListPage extends Annotations {
 	}
 	
 	
-	public void scrollToElement()
+	public SampleListPage scrollToElement()
+	
 	{
-		WebElement wheelPicker = driver.findElementByXPath("//android.widget.TextView[@text='Wheel Picker']");
-		scroll_point_input(wheelPicker);
+		scrollFromDownToUpinAppUsingPointerInputUntilElementIsVisible("xpath","//android.widget.TextView[@text='Wheel Picker']");
+		WebElement wheel_picker = driver.findElementByXPath("//android.widget.TextView[@text='Wheel Picker']");
+        //click(wheel_picker);
+		
+	if(wheel_picker.isDisplayed())
+		{
+			click(wheel_picker);
+		}
+		
+		return this;
 
 	}
 

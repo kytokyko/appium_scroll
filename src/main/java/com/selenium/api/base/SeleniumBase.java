@@ -98,10 +98,25 @@ public class SeleniumBase extends Reporter implements Wrapper{
 		return true;
 	}
 
-	
+	@Override
+	public long takeSnap() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 	@Override
-	public void scroll() {
+	public boolean scrollFromDownToUpinAppUsingPointerInputUntilElementIsVisible(String locator, String locValue) {
+		// TODO Auto-generated method stub
+		while(!eleIsDisplayed(locateElement(locator, locValue))) {
+			scrollFromDownToUpinAppUsingPointerInput();
+		}
+		return true;
+		
+	}
+
+	@Override
+	public void scrollFromDownToUpinAppUsingPointerInput() {
+		// TODO Auto-generated method stub
 		Dimension size = driver.manage().window().getSize();
 		int x1 = (int) (size.getWidth() * 0.5);
 		int y1 = (int) (size.getHeight() * 0.8);
@@ -110,54 +125,28 @@ public class SeleniumBase extends Reporter implements Wrapper{
 		PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
 		Sequence sequence = new Sequence(finger, 1);
 		sequence.addAction(finger.createPointerMove(Duration.ofMillis(0), PointerInput.Origin.viewport(),
-		x1, y1));
+				x1, y1));
 		sequence.addAction(finger.createPointerDown(PointerInput.MouseButton.MIDDLE.asArg()));
 		sequence.addAction(finger.createPointerMove(Duration.ofMillis(600), PointerInput.Origin.viewport(),
-		x0, y0));
+				x0, y0));
 		sequence.addAction(finger.createPointerUp(PointerInput.MouseButton.MIDDLE.asArg()));
 		driver.perform(Arrays.asList(sequence));
 		
 	}
 
 	@Override
-	public long takeSnap() {
+	public boolean eleIsDisplayed(WebElement ele) {
 		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public boolean eleIsDisplayed(String ele) {
-		// TODO Auto-generated method stub
-		try
-		{
-		if(locateElementByXpath(ele).isDisplayed())
-		return true;
-		}catch(Exception ae)
-
-		{
-		return false;
+		try {
+			if (ele.isDisplayed())
+				return true;
+		} catch (Exception e) {
+			return false;
 		}
 		return false;
 	}
 
-	@Override
-	public WebElement locateElementByXpath(String ele) {
-		// TODO Auto-generated method stub
-		try {
-			return driver.findElementByXPath(ele);
-			} catch (Exception e) {
-			}
-		return null;
-	}
 
-	@Override
-	public boolean scroll_point_input(WebElement wheelPicker) {
-		// TODO Auto-generated method stub
-		while(!eleIsDisplayed(wheelPicker)) {
-			scroll();
-			}
-		return true;
-	}
 }
 
 		

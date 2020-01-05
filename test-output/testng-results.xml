@@ -1,44 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="33624" started-at="2019-12-13T08:16:37Z" finished-at="2019-12-13T08:17:10Z">
+  <suite name="Suite" duration-ms="70404" started-at="2019-12-17T13:36:08Z" finished-at="2019-12-17T13:37:18Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.framework.testcases.TC_001@a7e666]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.framework.testcases.TC_002@68bbe345]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="33624" started-at="2019-12-13T08:16:37Z" finished-at="2019-12-13T08:17:10Z">
-      <class name="com.framework.testcases.TC_001">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="startReport" is-config="true" duration-ms="418" started-at="2019-12-13T08:16:36Z" finished-at="2019-12-13T08:16:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="setData" is-config="true" duration-ms="0" started-at="2019-12-13T08:16:37Z" finished-at="2019-12-13T08:16:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setData -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="setUpClass" is-config="true" duration-ms="151" started-at="2019-12-13T08:16:37Z" finished-at="2019-12-13T08:16:37Z">
+    <test name="Test" duration-ms="70404" started-at="2019-12-17T13:36:08Z" finished-at="2019-12-17T13:37:18Z">
+      <class name="com.framework.testcases.TC_002">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.framework.testcases.TC_002@68bbe345]" name="setUpClass" is-config="true" duration-ms="1" started-at="2019-12-17T13:36:40Z" finished-at="2019-12-17T13:36:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="report()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="report" is-config="true" duration-ms="13" started-at="2019-12-13T08:16:37Z" finished-at="2019-12-13T08:16:37Z">
+        <test-method status="PASS" signature="report()[pri:0, instance:com.framework.testcases.TC_002@68bbe345]" name="report" is-config="true" duration-ms="1" started-at="2019-12-17T13:36:40Z" finished-at="2019-12-17T13:36:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="beforeMethod" is-config="true" duration-ms="32392" started-at="2019-12-13T08:16:37Z" finished-at="2019-12-13T08:17:09Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.framework.testcases.TC_002@68bbe345]" name="beforeMethod" is-config="true" duration-ms="28013" started-at="2019-12-17T13:36:40Z" finished-at="2019-12-17T13:37:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="click()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="click" duration-ms="1032" started-at="2019-12-13T08:17:09Z" finished-at="2019-12-13T08:17:10Z">
+        <test-method status="PASS" signature="scroll()[pri:1, instance:com.framework.testcases.TC_002@68bbe345]" name="scroll" duration-ms="9988" started-at="2019-12-17T13:37:08Z" finished-at="2019-12-17T13:37:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- click -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2019-12-13T08:17:10Z" finished-at="2019-12-13T08:17:10Z">
+        </test-method> <!-- scroll -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.framework.testcases.TC_002@68bbe345]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2019-12-17T13:37:18Z" finished-at="2019-12-17T13:37:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.framework.testcases.TC_001@1efed156]" name="stopReport" is-config="true" duration-ms="406" started-at="2019-12-13T08:17:10Z" finished-at="2019-12-13T08:17:11Z">
+      </class> <!-- com.framework.testcases.TC_002 -->
+      <class name="com.framework.testcases.TC_001">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.framework.testcases.TC_001@a7e666]" name="startReport" is-config="true" duration-ms="473" started-at="2019-12-17T13:36:07Z" finished-at="2019-12-17T13:36:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:com.framework.testcases.TC_001@a7e666]" name="setData" is-config="true" duration-ms="0" started-at="2019-12-17T13:36:08Z" finished-at="2019-12-17T13:36:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:com.framework.testcases.TC_002@68bbe345]" name="setData" is-config="true" duration-ms="0" started-at="2019-12-17T13:36:08Z" finished-at="2019-12-17T13:36:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.framework.testcases.TC_001@a7e666]" name="setUpClass" is-config="true" duration-ms="147" started-at="2019-12-17T13:36:08Z" finished-at="2019-12-17T13:36:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="report()[pri:0, instance:com.framework.testcases.TC_001@a7e666]" name="report" is-config="true" duration-ms="10" started-at="2019-12-17T13:36:08Z" finished-at="2019-12-17T13:36:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.framework.testcases.TC_001@a7e666]" name="beforeMethod" is-config="true" duration-ms="31362" started-at="2019-12-17T13:36:08Z" finished-at="2019-12-17T13:36:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="click()[pri:0, instance:com.framework.testcases.TC_001@a7e666]" name="click" duration-ms="809" started-at="2019-12-17T13:36:39Z" finished-at="2019-12-17T13:36:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.framework.testcases.TC_001@a7e666]" name="tearDownClass" is-config="true" duration-ms="9" started-at="2019-12-17T13:36:40Z" finished-at="2019-12-17T13:36:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.framework.testcases.TC_001@a7e666]" name="stopReport" is-config="true" duration-ms="597" started-at="2019-12-17T13:37:18Z" finished-at="2019-12-17T13:37:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopReport -->

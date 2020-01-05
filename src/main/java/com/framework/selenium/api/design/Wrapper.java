@@ -36,13 +36,15 @@ public interface Wrapper {
 	
 	public boolean click(WebElement ele);
 	
-	public void scroll();
+	public boolean scrollFromDownToUpinAppUsingPointerInputUntilElementIsVisible(String locator,String locValue);
 	
-	public boolean eleIsDisplayed(String ele);
+	public void scrollFromDownToUpinAppUsingPointerInput();
 	
-	public WebElement locateElementByXpath(String ele);
+	public boolean eleIsDisplayed(WebElement ele);
 	
-	public boolean scroll_point_input(String ele);
+	
+	
+
 
 	
 	
